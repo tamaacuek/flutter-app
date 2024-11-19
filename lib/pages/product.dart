@@ -2,15 +2,15 @@ import 'package:appflutter/util/fun_collection.dart';
 import 'package:flutter/material.dart';
 
 class Product extends StatelessWidget {
+  const Product({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Product'),
+        title: const Text('Product'),
       ),
-      body: ProductList(
-
-      ),
+      body: ProductList(),
     );
   }
 }
@@ -37,9 +37,10 @@ class ProductList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Daftar Produk'),
+        title: const Text('Daftar Produk'),
       ),
-      body: GridBuilderDuaKolom(items: products), // Tambahkan titik koma di sini
+      body:
+          GridBuilderDuaKolom(items: products), // Tambahkan titik koma di sini
     );
   }
 }

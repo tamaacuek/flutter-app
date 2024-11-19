@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => HistoryPage()),
+                      MaterialPageRoute(builder: (context) => const HistoryPage()),
                     );
                   },
                   child: Container(
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => ShoppingCartPage()),
+                      MaterialPageRoute(builder: (context) => const ShoppingCartPage()),
                     );
                   },
                   child: Container(
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => BusinessPage()),
+                      MaterialPageRoute(builder: (context) => const BusinessPage()),
                     );
                   },
                   child: Container(
